@@ -43,7 +43,9 @@ setup(name='pydatamall.webui',
           'requests'
           # -*- Extra requirements: -*-
       ],
-      entry_points="""
-      # -*- Entry points: -*-
-      """,
+      entry_points={
+          'console_scripts': [
+              'webui=pydatamall.webui.runner:main'
+            ]
+      }
       )
