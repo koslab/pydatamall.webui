@@ -35,6 +35,12 @@ setup(name='pydatamall.webui',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'pyramid',
+          'pyramid_layout',
+          'pyramid_bowerstatic',
+          'pyramid_chameleon',
+          'python-social-auth',
+          'requests'
           # -*- Extra requirements: -*-
       ],
       entry_points="""
