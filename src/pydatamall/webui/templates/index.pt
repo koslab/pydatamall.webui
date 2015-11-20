@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/favicon.ico">
+
+    <title>DataShare.ASIA: Your Regional Data Marketplace</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="++static++landing/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="++static++landing/assets/css/custom-animations.css" rel="stylesheet">
+    <link href="++static++landing/assets/css/style.css" rel="stylesheet">
+    <link href="++static++/style.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="++static++landing/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- ********** HEADER ********** -->
+    <div id="h">
+        <div class="container">
+            <div class="row">
+                <li><button class="btn btn-lg btn-info btn-register">Register</button></li>
+
+                <div class="col-md-8 col-md-offset-2 centered">
+                    <img id="top-logo" src="++static++/logo-white.png"/>
+                    <div class="row">
+                        <form role="form" action="search" method="get" enctype="plain"
+                            style="text-align:center"> 
+                            <div class="col-md-10">
+                                <input type="input" name="keyword" style="width:100%" placeholder="Search for data ..." required>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class='btn btn-lg btn-info btn-sub subscribe-submit' type="submit">Search</button>
+                                </div>
+                    </form>
+                    </div> <!-- /row -->
+                
+                </div>
+
+            </div>
+        </div><!--/container -->
+    </div><!--/h -->
+    
+    <!-- ********** FIRST ********** -->
+    <div class="white">
+        <div class="row nopadding">
+            <div class="col-md-5 col-md-offset-1 mt">
+                <h4>Search for data</h4>
+                <p>We collect various datasets from both Open Data and private data providers, packaged them in an easy to consume format standards, and made it easily searchable for you to discover helpful datasets<p>
+                <p class="mt">
+                    <a href="#h">
+                        <button class="btn btn-info btn-theme">Find Data | Search</button>
+                    </a>
+                </p>
+            </div>
+            
+            <div class="col-md-6 pull-right">
+                <img src="++static++landing/assets/img/shot01.png" class="img-responsive alignright" alt="" data-effect="slide-right">
+            </div>
+        </div><!--/row -->
+    </div><!--/container -->
+    
+
+    <div class="jelly">
+        <div class="row nopadding">
+            <div class="col-md-6 pull-left">
+                <img src="++static++landing/assets/img/shot02.png" class="img-responsive alignleft" alt="" data-effect="slide-left">
+            </div>
+            <div class="col-md-5 mt">
+
+                <h4>Buy Commercial Data</h4>
+                <p>Our platform allows you to easily procure commercial data and subscribe for updates. Dataset includes government sources and NGOs</p>
+                <p class="mt">
+                    <a href="#h">
+                        <button class="btn btn-white btn-theme">Buy Data | Search</button>
+                    </a>
+                </p>
+            </div>
+    
+        </div><!--row -->
+    </div>
+
+    <div class="white">
+        <div class="row nopadding">
+            <div class="col-md-5 col-md-offset-1 mt">
+                <h4>Sell Commercial Data</h4>
+                <p>For data collectors and sellers, we provide you a platform for you to advertise and sell your data easily<p>
+                <p class="mt"><button class="btn btn-info btn-theme">Get Listed | Contact Us</button></p>
+            </div>
+            
+            <div class="col-md-6 pull-right">
+                <img src="++static++landing/assets/img/shot01.png" class="img-responsive alignright" alt="" data-effect="slide-right">
+            </div>
+        </div><!--/row -->
+    </div><!--/container -->
+    
+   
+    <!-- ********** FOOTER ********** -->
+    <div id="f">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 centered">
+                    <h4 class="mb">Search for data</h4>
+                    <div class="row">
+                        <form role="form" action="search" method="post" enctype="plain"
+                            style="text-align:center"> 
+                            <div class="col-md-10">
+                                <input type="input" name="keyword" style="width:100%" placeholder="Search for data ..." required>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class='btn btn-lg btn-info btn-sub subscribe-submit' type="submit">Search</button>
+                                </div>
+                    </form>
+                    </div> <!-- /row -->
+
+                
+                </div>
+
+            </div><!--/row -->
+        </div><!--/container -->
+    </div><!--/F -->
+
+    <!-- ********** CREDITS ********** -->
+    <div id="c">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 centered">
+                    <p>&copy; 2015, KOSLAB Technologies</p>
+                </div>
+            </div>
+        </div><!--/container -->
+    </div><!--/C -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="++static++landing/assets/js/jquery.min.js"></script>
+    <script src="++static++landing/assets/js/bootstrap.min.js"></script>
+    <script src="++static++landing/assets/js/retina-1.1.0.js"></script>
+    <script src="++static++landing/assets/js/jquery.unveilEffects.js"></script>
+  </body>
+</html>
