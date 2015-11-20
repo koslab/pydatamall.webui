@@ -6,7 +6,6 @@ from pydatamall.webui.config import get_config
 
 def main():
     config = get_config()
-    config.scan()
     app = config.make_wsgi_app()
     print("Listing on port 8080")
     server = make_server('0.0.0.0', 8080, app)

@@ -5,18 +5,21 @@ _SINGLETONS={'config': None}
 
 
 INCLUDES=[
-    'pyramid_chameleon'
+    'pyramid_chameleon',
 ]
 
-LANDING_STATIC=os.path.join(
-    os.path.dirname(__file__),
-    'theme','landing'
-)
+SCAN=[
+    'pydatamall.webui',
+]
 
-MAIN_STATIC=os.path.join(
-    os.path.dirname(__file__),
-    'static'
-)
+ROUTES=[
+    ('root', '/'),
+]
+
+STATIC={
+    '++static++landing': os.path.join(os.path.dirname(__file__),'theme','landing'),
+    '++static++': os.path.join(os.path.dirname(__file__), 'static')
+}
 
 def get_config():
     if _SINGLETONS['config'] is not None:
@@ -27,9 +30,15 @@ def get_config():
     for incl in INCLUDES:
         config.include(incl)
 
-    config.add_route('root', '/')
-    config.add_static_view(name='++static++landing', path=LANDING_STATIC)
-    config.add_static_view(name='++static++', path=MAIN_STATIC)
+    for n, r in ROUTES:
+        config.add_route(n, r)
+
+    for n,p in STATIC.items():
+        config.add_static_view(name=n, path=p)
+
+    for s in SCAN:
+        config.scan(s)
+
     _SINGLETONS['config'] = config
     return config
 
